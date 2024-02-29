@@ -10,7 +10,7 @@ def read_data(path: str) -> pd.DataFrame:
     return data
 
 
-def group_data(data: pd.DataFrame) -> pd.DataFrame:
+def group_by_month(data: pd.DataFrame) -> pd.DataFrame:
     return data.groupby([data["Date"].dt.to_period("M"), "Item Name"])["Transaction #"].count().unstack("Item Name")
 
 
@@ -37,7 +37,7 @@ def filter_and_plot(data: pd.DataFrame, items: list, i: int) -> None:
 
 def main():
     data = read_data(__file__)
-    unstacked_data = group_data(data)
+    unstacked_data = group_by_month(data)
     groups = split_into_groups(3, unstacked_data)
     for i, items in enumerate(groups):
         filter_and_plot(unstacked_data, items, i)
