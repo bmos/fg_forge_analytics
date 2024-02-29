@@ -26,13 +26,13 @@ def filter_and_plot(data: pd.DataFrame, items: list, i: int, ax: plt.Axes) -> No
     items = [item for item in items if item in data.columns]
     subset_data = data.loc[:, items]
     for column in subset_data.columns:
-        ax.plot(subset_data.index.to_timestamp(), subset_data[column].cumsum(), label=column)
+        ax.plot(subset_data.index.to_timestamp(), subset_data[column], label=column)
     ax.xaxis.set_major_locator(mdates.MonthLocator())
     ax.xaxis.set_minor_locator(mdates.WeekdayLocator())
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %Y"))
-    ax.set_title("Cumulative Sales over time (Chart {})".format(i + 1), fontsize=22)
+    ax.set_title("Sales over time (Chart {})".format(i + 1), fontsize=22)
     ax.set_xlabel("Time", fontsize=16)
-    ax.set_ylabel("Cumulative number of sales / month", fontsize=16)
+    ax.set_ylabel("Number of sales / month", fontsize=16)
     ax.legend(fontsize="large")
 
 
