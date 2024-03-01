@@ -1,4 +1,4 @@
-[![CodeQL](https://github.com/bmos/fg_forge_analytics/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/bmos/fg_forge_analytics/actions/workflows/github-code-scanning/codeql) [![Pytest](https://github.com/bmos/fg_forge_analytics/actions/workflows/pytest.yml/badge.svg)](https://github.com/bmos/fg_forge_analytics/actions/workflows/pytest.yml) [![Ruff](https://github.com/bmos/fg_forge_analytics/actions/workflows/lint-python.yml/badge.svg)](https://github.com/bmos/fg_forge_analytics/actions/workflows/lint-python.yml)
+[![CodeQL](https://github.com/bmos/fg_forge_analytics/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/bmos/fg_forge_analytics/actions/workflows/github-code-scanning/codeql) [![Ruff](https://github.com/bmos/fg_forge_analytics/actions/workflows/lint-python.yml/badge.svg)](https://github.com/bmos/fg_forge_analytics/actions/workflows/lint-python.yml)
 
 # Forge Analytics
 
