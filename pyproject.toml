@@ -13,7 +13,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-    "pre-commit==3.7.0",
+    "pre-commit==3.7.1",
     "ruff==0.4.4"
 ]
 
