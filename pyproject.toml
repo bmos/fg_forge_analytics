@@ -8,7 +8,7 @@ authors = [{ name = "bmos", email = "wil.thieme@protonmail.com" }]
 #urls = { Repository = "https://github.com/bmos/fg_forge_analytics" }
 dependencies = [
     "pandas==2.2.2",
-    "matplotlib==3.8.4",
+    "matplotlib==3.9.0",
 ]
 
 [project.optional-dependencies]
