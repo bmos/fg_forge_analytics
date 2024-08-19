@@ -14,7 +14,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pre-commit==3.8.0",
-    "ruff==0.5.7"
+    "ruff==0.6.1"
 ]
 
 [tool.ruff]
